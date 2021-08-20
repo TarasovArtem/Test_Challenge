@@ -1,6 +1,5 @@
 /// <reference types="Cypress" />
 
-
 class TodoList {
     getAddToDo() {
         return cy.fixture('someData');
@@ -16,6 +15,10 @@ class TodoList {
 
     getInputAddNew() {
         return cy.get('[placeholder="Add New"]');
+    }
+    
+    getCompletedCheckbox() {
+        return cy.get('input[type="checkbox"]');
     }
 }
 export default TodoList
