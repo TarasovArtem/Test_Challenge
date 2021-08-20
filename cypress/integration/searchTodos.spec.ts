@@ -9,7 +9,7 @@ describe('Searching by THINGS TO DO List', () => {
     let todoList = new TodoList();
 
     beforeEach(() => {
-        todoList = Navigation.todoList();    
+        todoList = Navigation.todoList();
     })
 
     it('should show searching by THINGS TO DO List ', () => {

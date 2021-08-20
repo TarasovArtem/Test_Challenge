@@ -9,7 +9,7 @@ describe('Filtration of THINGS TO DO List', () => {
     let todoList = new TodoList();
 
     beforeEach(() => {
-        todoList = Navigation.todoList();    
+        todoList = Navigation.todoList();
     })
 
     it('should show filtration of THINGS TO DO List', () => {
