@@ -4,7 +4,7 @@ import TodoList from '../page_objects/todoList';
 import Navigation from '../page_objects/navigation';
 
 
-describe('Test of checkboxes', () => {
+describe('Add New Task to THINGS TO DO List', () => {
 
     let todoList = new TodoList();
 
@@ -12,7 +12,7 @@ describe('Test of checkboxes', () => {
         todoList = Navigation.todoList();    
     })
 
-    it('should add New Task', () => {
+    it('should add New Task to to do list', () => {
         todoList.getItems().should(($taskItems) => {
             expect($taskItems.eq(0)).to.contain('Learn Javascript');
             expect($taskItems.eq(1)).to.contain('Learn React');
