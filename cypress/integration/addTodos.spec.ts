@@ -16,15 +16,13 @@ describe('Add New Task to THINGS TO DO List', () => {
             expect($taskItems).to.contain(NameTask.React);
             expect($taskItems).to.contain(NameTask.Build);
         })
-        cy.log('Expect 3 active task');
-
         todoList.getTodoList().within(() => {
             todoList.getAddToDo().then((someData: any) => {
                 todoList.getInputAddNew()
                     .type(someData.name)
+                    .should('have.value', NameTask.New)
                     .type('{enter}');
             })
-            cy.log('Created' + ' ' +  NameTask.New);
         })
 
         todoList.getItems().should(($taskItems) => {
@@ -33,6 +31,5 @@ describe('Add New Task to THINGS TO DO List', () => {
             expect($taskItems).to.contain(NameTask.Build);
             expect($taskItems).to.contain(NameTask.New);
         })
-        cy.log('Expect 4 active task');
     })
 })
