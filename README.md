@@ -1,3 +1,4 @@
+[![E2E Test Challenge](https://github.com/TarasovArtem/Test_Challenge/actions/workflows/main.yml/badge.svg)](https://github.com/TarasovArtem/Test_Challenge/actions/workflows/main.yml)
 # Test_Challenge
 
     I need to test the new functionality of the task list. The system has never been in production, and it will be put into production after my testing. I need to test
