@@ -1,3 +1,6 @@
 {
-    "baseUrl": "https://simplest-react-todo-app.herokuapp.com/"
+    "baseUrl": "https://simplest-react-todo-app.herokuapp.com/",
+    "pluginsFile": false,
+    "viewportWidth": 1920,
+    "viewportHeight": 1080
 }
