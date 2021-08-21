@@ -3,6 +3,6 @@
 import TodoList from './todoList';
 import Navigation from './navigation';
 import Filtration from './filtration';
-import { NameTask, State }  from './const';
+import { NameTask, State, FiltrationBtn }  from './const';
 
-export { TodoList, Navigation, Filtration, NameTask, State };
+export { TodoList, Navigation, Filtration, NameTask, State, FiltrationBtn };

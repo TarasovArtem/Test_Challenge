@@ -1,16 +1,9 @@
 /// <reference types="Cypress" />
 
+import { FiltrationBtn } from './index'
 class Filtration {
-    getAllItemsBtn() {
-        return cy.contains('All');
-    }
-
-    getActiveItemsBtn() {
-        return cy.contains('Active');
-    }
-
-    getCompletedItemsBtn() {
-        return cy.contains('Completed');
+    getFiltrationBtn(name: FiltrationBtn) {
+        return cy.contains(name);
     }
 }
 export default Filtration;

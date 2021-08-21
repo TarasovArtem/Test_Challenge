@@ -1,8 +1,6 @@
 /// <reference types="Cypress" />
 
-import TodoList from '../page_objects/todoList';
-import Navigation from '../page_objects/navigation';
-
+import { TodoList, Navigation, NameTask }  from '../page_objects/index';
 
 describe('Searching by THINGS TO DO List', () => {
 

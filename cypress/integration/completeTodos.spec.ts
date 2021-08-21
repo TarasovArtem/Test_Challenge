@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-import { TodoList, Navigation, Filtration, NameTask, State }  from '../page_objects/index';
+import { TodoList, Navigation, Filtration, NameTask, State, FiltrationBtn }  from '../page_objects/index';
 
 describe('Completed tasks on THINGS TO DO List', () => {
 
@@ -15,7 +15,7 @@ describe('Completed tasks on THINGS TO DO List', () => {
         todoList.getItems().eq(0).should('have.class', State.pending );
         todoList.getCompletedCheckbox().eq(0).check();
         todoList.getItems().eq(0).should('have.class', State.completed );
-        filtration.getCompletedItemsBtn().click();
+        filtration.getFiltrationBtn(FiltrationBtn.completed).click();
         todoList.getItems().should('contain', NameTask.Javascript);
     })
 })

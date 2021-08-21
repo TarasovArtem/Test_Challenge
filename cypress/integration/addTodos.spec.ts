@@ -12,9 +12,9 @@ describe('Add New Task to THINGS TO DO List', () => {
 
     it('should add New Task to THINGS TO DO list', () => {
         todoList.getItems().should(($taskItems) => {
-            expect($taskItems.eq(0)).to.contain(NameTask.Javascript);
-            expect($taskItems.eq(1)).to.contain(NameTask.React);
-            expect($taskItems.eq(2)).to.contain(NameTask.Build);
+            expect($taskItems).to.contain(NameTask.Javascript);
+            expect($taskItems).to.contain(NameTask.React);
+            expect($taskItems).to.contain(NameTask.Build);
         })
         cy.log('Expect 3 active task');
 
@@ -28,10 +28,10 @@ describe('Add New Task to THINGS TO DO List', () => {
         })
 
         todoList.getItems().should(($taskItems) => {
-            expect($taskItems.eq(0)).to.contain(NameTask.Javascript);
-            expect($taskItems.eq(1)).to.contain(NameTask.React);
-            expect($taskItems.eq(2)).to.contain(NameTask.Build);
-            expect($taskItems.eq(3)).to.contain(NameTask.New);
+            expect($taskItems).to.contain(NameTask.Javascript);
+            expect($taskItems).to.contain(NameTask.React);
+            expect($taskItems).to.contain(NameTask.Build);
+            expect($taskItems).to.contain(NameTask.New);
         })
         cy.log('Expect 4 active task');
     })

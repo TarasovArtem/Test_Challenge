@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-import TodoList from "./todoList";
+import { TodoList } from "./index";
 
 class Navigation {
     static todoList(): TodoList {
