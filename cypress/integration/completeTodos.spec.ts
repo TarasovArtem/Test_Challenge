@@ -1,12 +1,9 @@
 /// <reference types="Cypress" />
 
-import TodoList from '../page_objects/todoList';
-import Navigation from '../page_objects/navigation';
-import Filtration from '../page_objects/filtration';
-import { NameTask, State }  from '../page_objects/const';
-
+import { TodoList, Navigation, Filtration, NameTask, State }  from '../page_objects/index';
 
 describe('Completed tasks on THINGS TO DO List', () => {
+
     const filtration = new Filtration();
     let todoList = new TodoList();
 
