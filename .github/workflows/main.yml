@@ -1,0 +1,16 @@
+name: E2E Test Challenge
+
+on:
+  push: 
+    branches:
+      - "main"
+
+jobs:
+  cypress:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2      
+      - name: Install 
+        run: npm ci 
+      - name: Start E2E E2E Test Challenge
+        run: npm run cy:run

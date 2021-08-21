@@ -1,9 +1,13 @@
 {
     "name": "test_challenge",
+    "author": "Artem Tarasov",
     "version": "1.0.0",
     "scripts": {
         "cy:open": "cypress open",
-        "cy:run": "cypress run"
+        "cy:run": "cypress run",
+        "cy:run:chrome": "cypress run --headless --browser chrome",
+        "cy:run:firefox": "cypress run --headless --browser firefox",
+        "cy:run:edge": "cypress run --headless --browser edge"
     },
     "devDependencies": {
         "@bahmutov/add-typescript-to-cypress": "^2.1.2",
