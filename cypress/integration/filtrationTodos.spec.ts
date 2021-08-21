@@ -4,11 +4,12 @@ import { TodoList, Navigation, Filtration, NameTask, FiltrationBtn }  from '../p
 
 describe('Filtration of THINGS TO DO List', () => {
 
-    let todoList = new TodoList();
+    const todoList = new TodoList();
     const filtration = new Filtration();
+    const navigation = new Navigation();
 
     beforeEach(() => {
-        todoList = Navigation.todoList();
+        navigation.mainPage();
     })
 
     it('should show filtration of THINGS TO DO List', () => {

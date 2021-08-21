@@ -1,12 +1,9 @@
 /// <reference types="Cypress" />
 
 class Search {
+
     getSearchBtn() {
         return cy.get('.search');
-    }
-
-    getAddBtn() {
-        return cy.get('.add');
     }
 
     getInputSearch() {

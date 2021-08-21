@@ -4,11 +4,12 @@ import { TodoList, Navigation, Search, NameTask }  from '../page_objects/index';
 
 describe('Searching by THINGS TO DO List', () => {
 
-    let todoList = new TodoList();
+    const todoList = new TodoList();
     const search = new Search();
+    const navigation = new Navigation();
 
     beforeEach(() => {
-        todoList = Navigation.todoList();
+        navigation.mainPage();
     })
 
     it('should show searching by THINGS TO DO List ', () => {

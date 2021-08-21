@@ -4,10 +4,11 @@ import { TodoList, Navigation, NameTask }  from '../page_objects/index';
 
 describe('Add New Task to THINGS TO DO List', () => {
 
-    let todoList = new TodoList();
+    const todoList = new TodoList();
+    const navigation = new Navigation();
 
     beforeEach(() => {
-        todoList = Navigation.todoList();
+        navigation.mainPage();
     })
 
     it('should add New Task to THINGS TO DO list', () => {
@@ -24,7 +25,6 @@ describe('Add New Task to THINGS TO DO List', () => {
                     .type('{enter}');
             })
         })
-
         todoList.getItems().should(($taskItems) => {
             expect($taskItems).to.contain(NameTask.Javascript);
             expect($taskItems).to.contain(NameTask.React);

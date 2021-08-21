@@ -3,7 +3,6 @@
 
 class TodoList {
 
-
     getAddToDo() {
         return cy.fixture('someData');
     }
@@ -20,9 +19,16 @@ class TodoList {
         return cy.get('[placeholder="Add New"]');
     }
 
+    getAddBtn() {
+        return cy.get('.add');
+    }
+
     getCompletedCheckbox() {
         return cy.get('input[type="checkbox"]');
     }
 
+    getСounterOfItems() {
+        return cy.get('.pull-left');
+    }
 }
 export default TodoList

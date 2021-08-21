@@ -4,11 +4,12 @@ import { TodoList, Navigation, Filtration, NameTask, State, FiltrationBtn }  fro
 
 describe('Completed tasks on THINGS TO DO List', () => {
 
+    const todoList = new TodoList();
     const filtration = new Filtration();
-    let todoList = new TodoList();
+    const navigation = new Navigation();
 
     beforeEach(() => {
-        todoList = Navigation.todoList();
+        navigation.mainPage();
     })
 
     it('should show completed tasks on THINGS TO DO List', () => {
