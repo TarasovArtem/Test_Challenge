@@ -11,7 +11,7 @@
 
 #### Installation
  
-    git clone https://github.com/TarasovArtem/QA_Challenge.git
+    git clone https://github.com/TarasovArtem/Test_Challenge.git
 
     npm install
     
@@ -26,9 +26,9 @@ or
 
 #### Run all tests in specific browser (***Browsers should be installed on your local machine***)
 
-   npm run cy:run
+    npm run cy:run
    
-   npm run cy:run:chrome
+    npm run cy:run:chrome
 
     npm run cy:run:firefox
 
