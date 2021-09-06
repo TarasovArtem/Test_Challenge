@@ -18,7 +18,7 @@ describe('Add New Task to THINGS TO DO List', () => {
             expect($taskItems).to.contain(NameTask.Build);
         })
         todoList.getTodoList().within(() => {
-            todoList.getAddToDo().then((someData: any) => {
+            todoList.getAddToDo().then((someData: Record<string, string>) => {
                 todoList.getInputAddNew()
                     .type(someData.name)
                     .should('have.value', NameTask.New)
